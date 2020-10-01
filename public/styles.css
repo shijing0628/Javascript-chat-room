@@ -1,0 +1,124 @@
+.video-intro {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(204, 83, 51, 0.8),
+    rgba(35, 7, 77, 0.8)
+  );
+  filter: brightness(80%);
+}
+.form-control:focus {
+  border: 1px solid #fff;
+}
+
+.chat-bubble-user,
+.chat-bubble-my-user {
+  float: left;
+  width: 80%;
+  position: relative;
+}
+
+.chat-bubble-my-user {
+  float: right;
+  margin-right: 35px;
+}
+
+.chat-content {
+  overflow-y: scroll;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.chat-content ul li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.chat-content .chat-bubble-user p,
+.chat-content .chat-bubble-my-user p {
+  background-color: #86bb71;
+  padding: 15px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.chat-content .chat-bubble-my-user p {
+  background-color: #94c2ed;
+}
+.chat-row {
+  width: 70%;
+}
+.chat-textbox {
+  width: 100%;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3a3a;
+}
+
+.chat-textbox input {
+  width: 88%;
+  height: 40px;
+  color: #9fa5af;
+  border-radius: 5px;
+  padding: 0px 10px;
+  border: 1px solid #c1c1c1;
+}
+
+.chat-textbox i {
+  color: #3a3a3a;
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 12px 0px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.chat-bubble-user span i,
+.chat-bubble-my-user span i {
+  color: #86bb71;
+  font-size: 12px;
+}
+
+.chat-bubble-my-user span i {
+  color: #94c2ed;
+}
+
+.chat-bubble-my-user span {
+  float: right;
+}
+
+.chat-bubble-my-user span small,
+.chat-bubble-user span small {
+  color: #bdbdc2;
+}
+
+.chat-bubble-user:before {
+  content: " ";
+  position: absolute;
+  top: 19px;
+  left: 15px;
+  bottom: 150px;
+  border: 15px solid transparent;
+  border-bottom-color: #86bb71;
+  z-index: 1;
+}
+
+.chat-bubble-my-user:before {
+  content: " ";
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  bottom: 150px;
+  border: 15px solid transparent;
+  border-bottom-color: #94c2ed;
+}

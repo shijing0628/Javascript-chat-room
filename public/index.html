@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Chat Room</title>
+</head>
+
+<body>
+  <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay
+    muted loop>
+    <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
+  </video>
+
+  <div class="container">
+    <!-- bootstrap Modal -->
+    <div class="modal fade" id="usernameModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Enter Your Username</h5>
+          </div>
+          <div class="modal-body">
+            <input class="form-control" type="text" id="usernameModalInput" placeholder="Enter your username here"
+              name="username" autocomplete="off" />
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-block" id="enterRoomBtn">Enter Chatroom!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- chat room -->
+    <div class="row justify-content-center" id="chatroom">
+      <div class="col-8 align-self-center">
+        <div class="row">
+          <div class="col-12 chat-content">
+            <ul id="messages">
+
+              <!-- <li>
+                <div class="chat-bubble-user">
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Stephen <small>10:00 am</small> </span><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem provident ipsam
+                    facilis atque in, aliquid reprehenderit sunt aliquam necessitatibus! Asperiores ratione dolorem
+                    libero. Possimus laborum rem est excepturi mollitia.</p>
+
+                </div>
+              </li>
+              <li>
+                <div class="chat-bubble-my-user">
+                  <span> <small>10:00 am</small>Tony<i class="fa fa-circle" aria-hidden="true"></i> </span><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem provident ipsam
+                    facilis atque in, aliquid reprehenderit sunt aliquam necessitatibus! Asperiores ratione dolorem
+                    libero. Possimus laborum rem est excepturi mollitia.</p>
+                </div>
+              </li>
+              <li>
+                <div class="chat-bubble-user">
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Stephen <small>10:00 am</small> </span><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem provident ipsam
+                    facilis atque in, aliquid reprehenderit sunt aliquam necessitatibus! Asperiores ratione dolorem
+                    libero. Possimus laborum rem est excepturi mollitia.</p>
+                </div>
+              </li>
+              <li>
+                <div class="chat-bubble-my-user">
+                  <span> <small>10:00 am</small>Tony<i class="fa fa-circle" aria-hidden="true"></i> </span><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem provident ipsam
+                    facilis atque in, aliquid reprehenderit sunt aliquam necessitatibus! Asperiores ratione dolorem
+                    libero. Possimus laborum rem est excepturi mollitia.</p>
+                </div>
+              </li>
+              <li>
+                <div class="chat-bubble-user">
+                  <span><i class="fa fa-circle" aria-hidden="true"></i>Stephen <small>10:00 am</small> </span><br><br>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quidem provident ipsam
+                    facilis atque in, aliquid reprehenderit sunt aliquam necessitatibus! Asperiores ratione dolorem
+                    libero. Possimus laborum rem est excepturi mollitia.</p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="fixed-bottom col-12 chat-textbox">
+            <input id="chatMessageInput" type="text" placeholder="type your message..." autocomplete="off">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <!-- a Javascript client library for the browser (which can be also run from Node.js): -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"
+    integrity="sha512-AcZyhRP/tbAEsXCCGlziPun5iFvcSUpEz2jKkx0blkYKbxU81F+iq8FURwPn1sYFeksJ+sDDrI5XujsqSobWdQ=="
+    crossorigin="anonymous"></script>
+
+  <!-- good for manage time -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
